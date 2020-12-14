@@ -78,4 +78,10 @@ public class NumberUtil {
             return (int) (Math.pow(-1, n) * newResult);
         }
     }
+    public static Integer[] switching(Integer[] values){
+        values[0] +=  values[1];
+        values[1] = values[0] - values[1];
+        values[0] -= values[1];
+        return values;
+    }
 }

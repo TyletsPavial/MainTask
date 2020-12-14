@@ -44,5 +44,12 @@ public class Main {
 
         System.out.println("Results of binary search: \n" + ArrayUtil.binarySearch(arrayToBubbleSort, testInt)
                 + "\n" + ArrayUtil.binarySearch(arrayToQuickSort, testInt));
+
+        System.out.println("Switching the values: ");
+        Integer[] values = new Integer[]{1,2};
+        System.out.println(Arrays.toString(values));
+        NumberUtil.switching(values);
+        System.out.println(Arrays.toString(values));
+
     }
 }
