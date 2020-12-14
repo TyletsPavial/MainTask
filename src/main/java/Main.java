@@ -35,5 +35,14 @@ public class Main {
         System.out.println("Original array: " + Arrays.toString(arrayToQuickSort));
         ArrayUtil.quickSort(arrayToQuickSort);
         System.out.println("Array after sorting: " + Arrays.toString(arrayToQuickSort));
+
+        System.out.print("Search number in array: \n Enter number: ");
+        testInt = reader.nextInt();
+        System.out.println("Arrays: \n1)" + Arrays.toString(arrayToBubbleSort) + "\n2)" + Arrays.toString(arrayToQuickSort));
+        System.out.println("Results of linear search: \n" + ArrayUtil.linearSearch(arrayToBubbleSort, testInt)
+                + "\n" + ArrayUtil.linearSearch(arrayToQuickSort, testInt));
+
+        System.out.println("Results of binary search: \n" + ArrayUtil.binarySearch(arrayToBubbleSort, testInt)
+                + "\n" + ArrayUtil.binarySearch(arrayToQuickSort, testInt));
     }
 }
